@@ -466,7 +466,8 @@ internal class ConnectionManager {
       self.state = .idle(IdleState(configuration: state.configuration))
 
     case .idle, .connecting, .transientFailure, .active, .shutdown:
-      self.invalidState()
+//      self.invalidState()
+        break
     }
   }
 }
